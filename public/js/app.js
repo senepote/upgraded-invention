@@ -1,4 +1,3 @@
-
 const app = angular.module('MovieApp',[])
 
 app.controller('MainController', ['$http', function($http){
@@ -15,6 +14,8 @@ app.controller('MainController', ['$http', function($http){
       data: this.createForm
     }).then(response =>{
       console.log(response.data);
+    }, error =>{
+      console.log(error);
     })
   }
 
