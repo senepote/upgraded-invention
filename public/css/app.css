@@ -8,7 +8,7 @@ body {
   /* displays: flex; */
   /* opacity: 0.7; */
   display: block;
-  background-color: rgb(0, 102, 204, 0.5);
+
   /* background-color:#0066cc; */
   background-
   max-width: 500px;
@@ -18,14 +18,20 @@ body {
   padding-bottom: 15px;
 }
 .tableDiv {
+  background-color: rgb(0, 102, 204, 0.7);
   display: block;
   text-align: center;
   width: 400px;
   margin: 0 auto;
+  border-radius: 6px;
+  border: 2px solid #6600cc;
   /* margin-right: 300px;
   margin-left: 300px; */
 }
 
+table {
+  padding: 10px;
+}
 .movieDetails {
 
 }
@@ -39,4 +45,5 @@ input {
   padding: 10px;
   margin-bottom: 4px;
   border-radius: 10px;
+  background-color: #66b3ff;
 }
