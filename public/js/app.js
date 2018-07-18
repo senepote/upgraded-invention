@@ -13,7 +13,9 @@ app.controller('MainController', ['$http', function($http){
       url: '/movies',
       data: this.createForm
     }).then(response =>{
-      console.log(response.data);
+      // console.log(response.data);
+      this.movies.push(response.data)
+      this.createForm = {}
     }, error =>{
       console.log(error);
     })
