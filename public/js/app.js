@@ -5,9 +5,13 @@ app.controller('MainController', ['$http', function($http){
   this.movies = []
   this.movie = ''
 
+  this.chooseAMovie = movie =>{
+    this.movie = movie
+  }
   //create movie
   this.createForm = {}
   this.createMovie = () => {
+
     $http({
       method: 'POST',
       url: '/movies',
@@ -45,10 +49,21 @@ app.controller('MainController', ['$http', function($http){
       console.log(error);
     })
   }
+  //update route
+  this.updateMovie = movie => {
+    movie.watched = !movie.watched
+    $http({
+      method: 'PUT',
+      url:'/movies/' + movie._id,
+      data:{watched: movie.watched}
+    }).then(response =>{
+      console.log(response.data.watched);
+    },error +>{
+      console.log(error);
+    })
+  }
 
-
-
-
+  this.getMovies()
 
 
 
