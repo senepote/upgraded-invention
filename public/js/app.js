@@ -21,7 +21,30 @@ app.controller('MainController', ['$http', function($http){
     })
   }
 
+  this.getMovies = () => {
+    $http({
+      method: 'GET',
+      url: '/movies'
+    }).then(response =>{
+      this.movies = response.data
+    }, error => {
+      console.log(error);
+    })
+  }
 
+  //delete movie
+  this.deleteMovie = (id) =>{
+    $http({
+      method: 'DELETE',
+      url: '/movies/' + id
+    }).then(response => {
+      const removeByIndex = this.movies.findIndex(movie =>
+      movie._id ===id)
+      this.movies.splice(removeByIndex, 1)
+    },error => {
+      console.log(error);
+    })
+  }
 
 
 

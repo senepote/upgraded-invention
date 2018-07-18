@@ -18,7 +18,7 @@
       <table>
         <tr ng-repeat="movie in ctrl.movies">
           <td ng-click='ctrl.clickLikes()'> <img src="https://cdn.iconscout.com/public/images/icon/premium/png-512/reel-camera-movie-file-cinema-3cedaa56d2add403-512x512.png" alt="filmstrip"> </td>
-          <td></td>
+          <td>{{movie.title}}</td>
         </tr>
       </table>
       <div class="movieDetails">
