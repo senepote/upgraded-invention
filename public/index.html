@@ -11,8 +11,8 @@
   <body ng-controller="MainController as ctrl">
     <div class="container">
       <h1>{{ctrl.h1}}</h1>
-      <form>
-        <input>
+      <form ng-submit="ctrl.createMovie()">
+        <input type="text" placeholder="Movie Title" ng-model="ctrl.createForm.title"/>
       </form>
       <table>
 
