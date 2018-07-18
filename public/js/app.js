@@ -1,7 +1,7 @@
 const app = angular.module('MovieApp',[])
 
 app.controller('MainController', ['$http', function($http){
-  this.h1 = 'Personal Movie Collection'
+  this.h1 = 'Movie Bucket-List'
   this.movies = []
   this.movie = ''
 
@@ -58,7 +58,7 @@ app.controller('MainController', ['$http', function($http){
       data:{watched: movie.watched}
     }).then(response =>{
       console.log(response.data.watched);
-    },error +>{
+    },error =>{
       console.log(error);
     })
   }
