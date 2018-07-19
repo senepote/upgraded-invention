@@ -39,7 +39,11 @@ table {
 .movieDetails {
 
 }
-
+td {
+  padding: 6px;
+  border: 1px solid rgb(26, 0, 51,0.5);
+  border-radius: 4px;
+}
 img {
   height:15px;
   width:15px;
@@ -50,4 +54,8 @@ input {
   margin: 6px;
   border-radius: 10px;
   background-color: #66b3ff;
+}
+input:hover {
+  background-color: #1a0033;
+  color:#66b3ff;
 }
