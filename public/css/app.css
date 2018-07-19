@@ -4,8 +4,8 @@ body {
 
 .container {
   display: block;
-  background-color: rgb(0, 102, 204, 0.5);
-  /* background-color:#0066cc; */
+
+  background-color:rgb(26, 0, 51,0.5);
   background-
   max-width: 500px;
   text-align: center;
@@ -14,16 +14,25 @@ body {
   padding-bottom: 15px;
 }
 .tableDiv {
+  background-color: rgb(0, 102, 204, 0.8);
   display: block;
   text-align: center;
   width: 400px;
   margin: 0 auto;
 }
 
+table {
+  padding: 10px;
+
+}
 .movieDetails {
 
 }
-
+td {
+  padding: 6px;
+  border: 1px solid rgb(26, 0, 51,0.5);
+  border-radius: 4px;
+}
 img {
   height:15px;
   width:15px;
@@ -31,6 +40,11 @@ img {
 
 input {
   padding: 10px;
-  margin-bottom: 4px;
+  margin: 6px;
   border-radius: 10px;
+  background-color: #66b3ff;
+}
+input:hover {
+  background-color: #1a0033;
+  color:#66b3ff;
 }
