@@ -5,8 +5,9 @@ app.controller('MainController', ['$http', function($http){
   this.movies = []
   this.movie = ''
 
-  this.chooseAMovie = movie =>{
+  this.chooseOneMovie = movie =>{
     this.movie = movie
+    console.log(this.movie.title);
   }
   //create movie
   this.createForm = {}
@@ -50,7 +51,7 @@ app.controller('MainController', ['$http', function($http){
     })
   }
   //update route
-  this.updateMovie = movie => {
+  this.updateWatched = movie => {
     movie.watched = !movie.watched
     $http({
       method: 'PUT',
