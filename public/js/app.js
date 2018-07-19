@@ -63,6 +63,20 @@ app.controller('MainController', ['$http', function($http){
     })
   }
 
+  this.updateLikes = movie =>{
+
+  movie.likes++
+  $http({
+    method: 'PUT',
+    url: '/movies/' + movie._id,
+    data: {likes: movie.likes}
+  }).then(response =>{
+    console.log(response.data.likes)
+  }, error =>{
+    console.log(error.message);
+  })
+}
+
   this.getMovies()
 
 
