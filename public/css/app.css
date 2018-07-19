@@ -1,14 +1,11 @@
 body {
   background-image: url('http://creditadvice24.com/wp-content/uploads/2015/02/home-cinema.jpg');
-  /* background-repeat: no-repeat; */
 }
 
 .container {
-  /* displays: flex; */
-  /* opacity: 0.7; */
   display: block;
-  background-color: rgb(0, 102, 204, 0.5);
-  /* background-color:#0066cc; */
+
+  background-color:rgb(26, 0, 51,0.5);
   background-
   max-width: 500px;
   text-align: center;
@@ -16,6 +13,39 @@ body {
   color: #b3d9ff;
   padding-bottom: 15px;
 }
-div {
+.tableDiv {
+  background-color: rgb(0, 102, 204, 0.8);
+  display: block;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
 
+table {
+  padding: 10px;
+
+}
+.watched {
+  opacity: 0.3;
+font-style: italic;
+}
+td {
+  padding: 6px;
+  border: 1px solid rgb(26, 0, 51,0.5);
+  border-radius: 4px;
+}
+img {
+  height:15px;
+  width:15px;
+}
+
+input {
+  padding: 10px;
+  margin: 6px;
+  border-radius: 10px;
+  background-color: #66b3ff;
+}
+input:hover {
+  background-color: #1a0033;
+  color:#66b3ff;
 }
