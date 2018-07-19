@@ -1,12 +1,8 @@
-
 body {
   background-image: url('http://creditadvice24.com/wp-content/uploads/2015/02/home-cinema.jpg');
-  /* background-repeat: no-repeat; */
 }
 
 .container {
-  /* displays: flex; */
-  /* opacity: 0.7; */
   display: block;
 
   background-color:rgb(26, 0, 51,0.5);
@@ -25,8 +21,6 @@ body {
   margin: 0 auto;
   border-radius: 6px;
   border: 2px solid #6600cc;
-  /* margin-right: 300px;
-  margin-left: 300px; */
 }
 .desc {
   color:#ce99ff;
